@@ -31,7 +31,7 @@ X_test = sc_X.transform(X_test)
 
 # Define the model: Init k-NN
 # k < math.sqrt(y_test) and k % 2 = 1
-classifier = KNeighborsClassifier(n_neighbors=15, p=2, metric='euclidean')
+classifier = KNeighborsClassifier(n_neighbors=11, p=2, metric='euclidean')
 
 # Fit model
 classifier.fit(X_train, y_train)
